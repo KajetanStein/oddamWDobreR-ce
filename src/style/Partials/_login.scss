@@ -1,0 +1,13 @@
+.zaloguj{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .logContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid red 1px;
+  }
+}

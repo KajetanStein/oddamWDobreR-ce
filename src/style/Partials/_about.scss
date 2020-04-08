@@ -1,0 +1,25 @@
+
+
+.about{
+  background-color: $white;
+  display: flex;
+  .people{
+    width: 50%;
+  }
+}
+
+.content{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 9.5rem;
+
+  p{
+    font-size: 1.875rem;
+  }
+  .podpis{
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,44 @@
+
+.stepsHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img{
+    margin: 2.123rem;
+
+  }
+}
+.stepsMain{
+  background-color: $white;
+  display: flex;
+  justify-content: space-around;
+  padding: 4.75rem;
+  .step{
+    width: 8.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .kreska{
+      width: 70px;
+      border: 0.5px solid $dark;
+
+    }
+    h3{
+      font-size: 1.125rem;
+      margin: 0.625rem 0;
+    }
+    p{
+      font-size: 1rem;
+      margin: 0.625rem 0;
+    }
+  }
+}
+.stepsFooter{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+  padding-top: 2.125rem;
+
+}

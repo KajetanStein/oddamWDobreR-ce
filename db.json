@@ -1,0 +1,100 @@
+{
+  "fundacje":[
+    {"id":"1",
+      "name": "Dbam o zdrowie",
+      "mission": "Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+      "things": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+    },
+    {"id":"2",
+      "name": "Dla dzieci",
+      "mission": "Pomoc dzieciom z ubogich rodzin",
+      "things": "ubrania, meble, zabawki"
+    },
+    {"id":"3",
+      "name": "Bez domu",
+      "mission": "Pomoc dla osób nie posiadających miejsca zamieszkania",
+      "things": "ubrania, jedzenie, ciepłe koce"
+    },
+    {"id":"4",
+      "name": "Dla słoni",
+      "mission": "Pomoc słoniom",
+      "things": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+    },
+    {"id":"5",
+      "name": "Dla żyraf",
+      "mission": "Pomoc żyrafom",
+      "things": "ubrania, meble, zabawki"
+    },
+    {"id":"6",
+      "name": "Dla hien",
+      "mission": "Pomoc hienom",
+      "things": "ubrania, jedzenie, ciepłe koce"
+    },
+    {"id":"7",
+      "name": "Dla krokodyli",
+      "mission": "Pomoc krokodylom",
+      "things": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+    },
+    {"id":"8",
+      "name": "Dla lwów",
+      "mission": "Pomoc lwom",
+      "things": "ubrania, meble, zabawki"
+    },
+    {"id":"9",
+      "name": "Dla zebr",
+      "mission": "Pomoc zebrom",
+      "things": "ubrania, jedzenie, ciepłe koce"
+    }
+  ],
+  "NGOs": [
+    {"id":"1",
+      "name": "lorem",
+      "mission": "Praesent pellentesque, turpis ac ultrices sollicitudin, neque elit dapibus velit, ",
+      "things": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+    },
+    {"id":"2",
+      "name": "ipusm",
+      "mission": "nteger nibh purus, vehicula vel dui ut, posuere venenatis felis.",
+      "things": "ubrania, meble, zabawki"
+    },
+    {"id":"3",
+      "name": "dolor",
+      "mission": "Praesent suscipit augue sed tempor pharetra.",
+      "things": "ubrania, jedzenie, ciepłe koce"
+    },
+    {"id":"4",
+      "name": "sit",
+      "mission": "Cras sit amet commodo nulla. ",
+      "things": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+    },
+    {"id":"5",
+      "name": "Amet",
+      "mission": "Nam mollis odio lorem, sit amet ornare leo feugiat vel.",
+      "things": "ubrania, meble, zabawki"
+    },
+    {"id":"6",
+      "name": "consectetur",
+      "mission": "Vestibulum mollis justo libero, quis hendrerit dolor congue at.",
+      "things": "ubrania, jedzenie, ciepłe koce"
+    }
+  ],
+  "lokal": [
+    {"id":"1",
+      "name": "Powder",
+      "mission": "candy canes icing I love danish muffin.",
+      "things": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+    },
+    {"id":"2",
+      "name": "Candy",
+      "mission": "danish caramels cake I love.",
+      "things": "ubrania, meble, zabawki"
+    },
+    {"id":"3",
+      "name": "Croissant ",
+      "mission": "cupcake sugar plum dessert pudding chupa chups.",
+      "things": "ubrania, jedzenie, ciepłe koce"
+    }
+  ]
+
+
+}
