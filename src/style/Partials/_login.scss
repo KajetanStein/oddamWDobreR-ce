@@ -1,13 +1,60 @@
-.zaloguj{
+.zaloguj {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .logContent{
+
+  .logContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid red 1px;
+    position: relative;
+
+    .form {
+      background-color: $white;
+      padding: 2.5rem;
+      margin-top: 3.75rem;
+
+      div[class^="log"] {
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+
+    }
+
+      input, textarea {
+        border-bottom: 1px solid $light;
+        font-size: 1.123rem;
+        background-color: transparent;
+        margin: 0;
+      }
+
+      .logPassword {
+       label {
+          margin-top: 2rem;
+        }
+      }
+    }
   }
+
+
+.logButtons{
+  width: 100%;
+display: flex;
+  justify-content: space-between;
+  button{
+    padding: 0.8rem 1rem;
+    margin-top: 2.5rem
+  }
+  button:first-child{
+    transform: translateX(-50%);
+  }
+  button:last-child{
+    transform: translateX(50%);
+  }
+  button:active{
+    border: 1px solid $dark;
+  }
+}
 }

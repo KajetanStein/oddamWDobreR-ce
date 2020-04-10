@@ -1,47 +1,47 @@
 {
   "fundacje":[
     {"id":"1",
-      "name": "Dbam o zdrowie",
+      "name": "Fundacja dbam o zdrowie",
       "mission": "Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
       "things": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
     },
     {"id":"2",
-      "name": "Dla dzieci",
+      "name": "Fundacja dla dzieci",
       "mission": "Pomoc dzieciom z ubogich rodzin",
       "things": "ubrania, meble, zabawki"
     },
     {"id":"3",
-      "name": "Bez domu",
+      "name": "Fundacja bez domu",
       "mission": "Pomoc dla osób nie posiadających miejsca zamieszkania",
       "things": "ubrania, jedzenie, ciepłe koce"
     },
     {"id":"4",
-      "name": "Dla słoni",
+      "name": "Fundacja dla słoni",
       "mission": "Pomoc słoniom",
       "things": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
     },
     {"id":"5",
-      "name": "Dla żyraf",
+      "name": "Fundacja dla żyraf",
       "mission": "Pomoc żyrafom",
       "things": "ubrania, meble, zabawki"
     },
     {"id":"6",
-      "name": "Dla hien",
+      "name": "Fundacja dla hien",
       "mission": "Pomoc hienom",
       "things": "ubrania, jedzenie, ciepłe koce"
     },
     {"id":"7",
-      "name": "Dla krokodyli",
+      "name": "Fundacja dla krokodyli",
       "mission": "Pomoc krokodylom",
       "things": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
     },
     {"id":"8",
-      "name": "Dla lwów",
+      "name": "Fundacja dla lwów",
       "mission": "Pomoc lwom",
       "things": "ubrania, meble, zabawki"
     },
     {"id":"9",
-      "name": "Dla zebr",
+      "name": "Fundacja dla zebr",
       "mission": "Pomoc zebrom",
       "things": "ubrania, jedzenie, ciepłe koce"
     }
@@ -78,7 +78,7 @@
       "things": "ubrania, jedzenie, ciepłe koce"
     }
   ],
-  "lokal": [
+  "Lokal": [
     {"id":"1",
       "name": "Powder",
       "mission": "candy canes icing I love danish muffin.",

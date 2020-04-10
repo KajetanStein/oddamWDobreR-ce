@@ -2,21 +2,24 @@ import React, {useState} from "react";
 import NaviLog from "../../Home/HomeHeader/Navi&Log";
 import Ornament from "../../../assets/Decoration.svg";
 
-const LogIn = () => {
+const SignUp = () => {
 
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     const [form, setForm] = useState({
-       pass: ``,
+        pass: ``,
         email: ``,
+        pass2: ``
     });
     const [errors, setErrors] = useState({
         pass: false,
-        email: false
+        email: false,
+        pass2: false
     });
 
     const vali = {
-        name: (x) => x.length>5,
+        pass: (x) => x.length>5,
         email: (x) => re.test(String(x).toLowerCase()),
+        pass2: (x) => x===form.pass
     };
 
 
@@ -35,7 +38,7 @@ const LogIn = () => {
             <section className={`zaloguj`}>
                 <div className={`logContent`}>
                     <div className={`logHeader`}>
-                        <h1>Zaloguj się</h1>
+                        <h1>Załóż konto</h1>
                         <img src={Ornament} className={`ornament`}></img>
                     </div>
                     <form>
@@ -50,6 +53,11 @@ const LogIn = () => {
                             <input onChange={change} name={`pass`} type={`password`}/>
                             {errors.pass && <div className={`error`}>Hasło musi mieć przynajmniej 6 znaków</div>}
                         </div>
+                            <div className={`logPassword`}>
+                                <label>Powtórz hasło</label>
+                                <input onChange={change} name={`pass2`} type={`password`}/>
+                                {errors.pass2 && <div className={`error`}>Hasła muszą być identyczne</div>}
+                            </div>
                         </div>
                         <div className={`logButtons`}>
                             <button>Załóż konto</button>
@@ -61,4 +69,4 @@ const LogIn = () => {
         </>
     )
 }
-export default LogIn
+export default SignUp
