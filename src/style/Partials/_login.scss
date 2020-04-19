@@ -11,6 +11,13 @@
     align-items: center;
     position: relative;
 
+    .logHeader{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     .form {
       background-color: $white;
       padding: 2.5rem;
@@ -57,4 +64,16 @@ display: flex;
     border: 1px solid $dark;
   }
 }
+}
+.wyloguj{
+.logHeader{
+  h1{
+    width: 500px;
+  }
+}
+ .logContent {
+   button {
+     margin-top: 2.5rem
+   }
+ }
 }

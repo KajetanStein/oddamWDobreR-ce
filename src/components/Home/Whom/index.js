@@ -25,11 +25,11 @@ const Whom = () => {
         setPage(e.target.name)
     };
     const click = (e) => {
-        console.log(e.target.name);
-        setKomu(e.target.name)
+        setKomu(e.currentTarget.name);
+        setPage(1)
     };
     if (fund.length>3){
-        for (let i=1; i<=fund.length/3;i++){
+        for (let i=1; i<=Math.ceil(fund.length/3);i++){
         btns.push(i)
     }}
 
@@ -44,10 +44,10 @@ const Whom = () => {
                     Fundacjom
                 </button>
                 <button name={`NGOs`} onClick={click} className={`whomButton`}>
-                    <p>Organizacjom</p> <p>pozarządowym</p>
+                    Organizacjom pozarządowym
                 </button>
                 <button name={`Lokal`} onClick={click} className={`whomButton`}>
-                    <p>Lokalnym</p> <p>zbiórkom</p>
+                    Lokalnym zbiórkom
                 </button>
 
             </div>

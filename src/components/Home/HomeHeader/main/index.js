@@ -1,7 +1,12 @@
 import React from "react";
 import Ornament from "../../../../assets/Decoration.svg";
+import {useHistory} from "react-router-dom"
 
-const Main = () => {
+const Main = (props) => {
+    const history = useHistory();
+    const  navi = (url) => () => {
+        history.push(url)
+    };
     return (
         <main>
             <container>
@@ -11,8 +16,8 @@ const Main = () => {
                     <img src={Ornament} className={`ornament`}></img>
                 </div>
                 <div className={`mainButtons`}>
-                    <button className={`buttonBig`}><p>Oddaj</p> <p>rzeczy</p></button>
-                    <button className={`buttonBig`}><p>Zorganizuj</p> <p>zbiórkę</p></button>
+                    <button onClick={navi(props.log ? '/' : '/zaloguj')} className={`buttonBig`}>Oddaj rzeczy</button>
+                    <button onClick={navi(props.log ? '/' : '/zaloguj')} className={`buttonBig`}>Zorganizuj zbiórkę</button>
                 </div>
             </container>
         </main>

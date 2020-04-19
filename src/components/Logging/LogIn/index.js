@@ -1,9 +1,10 @@
 import React, {useState} from "react";
 import NaviLog from "../../Home/HomeHeader/Navi&Log";
 import Ornament from "../../../assets/Decoration.svg";
+import { useHistory } from 'react-router-dom';
 
 const LogIn = () => {
-
+    const history = useHistory();
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     const [form, setForm] = useState({
        pass: ``,
@@ -29,6 +30,10 @@ const LogIn = () => {
         }
     };
 
+   const  navi = (url) => () => {
+       history.push(url)
+   };
+
     return (
         <>
             <NaviLog/>
@@ -52,7 +57,7 @@ const LogIn = () => {
                         </div>
                         </div>
                         <div className={`logButtons`}>
-                            <button>Załóż konto</button>
+                            <button onClick={navi("/rejestracja")}>Załóż konto</button>
                             <button type="submit"> Zaloguj</button>
                         </div>
                     </form>

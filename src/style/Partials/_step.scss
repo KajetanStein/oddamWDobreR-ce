@@ -1,0 +1,173 @@
+h2 {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+.formAlert {
+  height: 17vh;
+  background-color: $yellow;
+  padding-left: 7.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    font-size: 1.375rem;
+  }
+}
+
+.formContent {
+  height: 83vh;
+  background-image: url("../../assets/Background-Form.jpg");
+  padding-left: 7.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 3.125rem;
+  }
+  h2 {
+    margin: 4.375rem 0 2.5rem 0;
+  }
+
+  .formMain {
+    display: flex;
+    flex-direction: column;
+    .summary{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      div{
+        font-size: 1.5rem;
+       img{
+         width: 50px;
+         height: 50px;
+       }
+      }
+    }
+    .forms{
+      width: 60vw;
+      display: flex;
+      align-items: flex-start;
+      form{
+        width: 50%;
+        height: 100%;
+        margin-right: 5vw;
+        div{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1rem;
+          .inputSummary{
+            font-weight: 300;
+            font-size: 1.5rem;
+            margin: auto 0;
+            width: 50%;
+            line-height: 2rem;
+          }
+        }
+        h4{
+          margin-bottom: 1rem;
+        }
+       textarea{
+        height: 5rem;
+         width: 50%;
+         margin-bottom: 0;
+         border: 1px solid $dark;
+        }
+        input{
+          border: 1px solid $dark;
+          display: block;
+          margin: auto 0;
+          width: 50%;
+          line-height: 2rem;
+        }
+      }
+    }
+    div {
+      display: flex;
+      align-items: center;
+    }
+
+    .checkbox {
+      display: block;
+      min-width: 2.5rem;
+      min-height: 2.5rem;
+      border: 1px solid $light;
+      margin: 1rem;
+    }
+
+    input:checked ~ label {
+      .checkbox {
+        background-color: $yellow;
+
+      }
+    }
+
+    input {
+      display: none;
+    }
+    .inputText{
+      display: block;
+      width: 30vw;
+      margin-top: 1rem;
+      line-height: 1.5rem;
+      background-color: transparent;
+      border: 1px solid $light
+    }
+
+    label {
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 2rem;
+      display: flex;
+      align-items: center;
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+.formMain {
+  margin-top: 2.125rem;
+}
+
+.formButtons {
+  button {
+    border: 1px solid $dark;
+    padding: 1.5rem 4rem;
+    font-size: 1.5rem;
+    margin-bottom: 3.125rem;
+    margin-right: 3.125rem;
+
+  }
+}
+
+select {
+  width: 16vw;
+  height: 3.125rem;
+
+}
+.checkboxBox {
+  width: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+  .labelKomu {
+    .checkbox {
+      padding: 0.5rem;
+      margin: 1rem 0;
+    }
+  }
+}
+
+.thanks{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 0
+}

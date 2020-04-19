@@ -9,8 +9,7 @@ const Fundacje = (props) => {
         <>
 
             <ul className={`lista`}>
-                {dane.length > 0 && dane.map((m) => {
-                    if (m != undefined) {
+                {props.dane.length > 1 && dane.map((m) => {
                         return (
                             <li>
                                 <div>
@@ -18,11 +17,10 @@ const Fundacje = (props) => {
                                         <h2 className={`orgName`}>{m.name}</h2>
                                         <p>{m.mission}</p>
                                     </div>
-                                    <div className={`orgList`}>{m.thing}s</div>
+                                    <div className={`orgList`}>{m.things}</div>
                                 </div>
                                 <div className={`kreska`}></div>
                             </li>)
-                    }
                 })}
             </ul>
 
