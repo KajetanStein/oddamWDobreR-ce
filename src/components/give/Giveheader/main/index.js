@@ -1,12 +1,7 @@
 import React from "react";
 import Ornament from "../../../../assets/Decoration.svg";
-import {useHistory} from "react-router-dom"
 
-const Main = (props) => {
-    const history = useHistory();
-    const  navi = (url) => () => {
-        history.push(url)
-    };
+const Main = () => {
     return (
         <main>
             <container>

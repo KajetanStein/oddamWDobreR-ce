@@ -1,7 +1,7 @@
 import React from "react";
 import Main from "./main";
 import NaviLog from "../../Home/HomeHeader/Navi&Log";
-const HomeHeader = (props)=>{
+const HomeHeader = ()=>{
 
     return(
         <>

@@ -7,7 +7,7 @@ import Whom from "./Whom";
 import Contact from "./Contact";
 
 const Home= ()=>{
-    const [log, setLog]=useState(false);
+    const [log, setLog]=useState(true);
     const logIn=()=>{
         setLog(true)
     };

@@ -24,46 +24,55 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
 
-  h4{
+  h4 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 3.125rem;
   }
+
   h2 {
-    margin: 4.375rem 0 2.5rem 0;
+    margin: 7.3vh 0 4.2vh 0;
   }
 
   .formMain {
     display: flex;
     flex-direction: column;
-    .summary{
+    height: 100%;
+
+    .summary {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      div{
+
+      div {
         font-size: 1.5rem;
-       img{
-         width: 50px;
-         height: 50px;
-       }
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
       }
     }
-    .forms{
+
+    .forms {
       width: 60vw;
       display: flex;
       align-items: flex-start;
-      form{
+
+      form {
         width: 50%;
         height: 100%;
         margin-right: 5vw;
-        div{
+
+        div {
           width: 100%;
           display: flex;
           justify-content: space-between;
           align-items: center;
           margin-bottom: 1rem;
-          .inputSummary{
+
+          .inputSummary {
             font-weight: 300;
             font-size: 1.5rem;
             margin: auto 0;
@@ -71,16 +80,19 @@ h2 {
             line-height: 2rem;
           }
         }
-        h4{
+
+        h4 {
           margin-bottom: 1rem;
         }
-       textarea{
-        height: 5rem;
-         width: 50%;
-         margin-bottom: 0;
-         border: 1px solid $dark;
+
+        textarea {
+          height: 5rem;
+          width: 50%;
+          margin-bottom: 0;
+          border: 1px solid $dark;
         }
-        input{
+
+        input {
           border: 1px solid $dark;
           display: block;
           margin: auto 0;
@@ -89,6 +101,7 @@ h2 {
         }
       }
     }
+
     div {
       display: flex;
       align-items: center;
@@ -112,7 +125,8 @@ h2 {
     input {
       display: none;
     }
-    .inputText{
+
+    .inputText {
       display: block;
       width: 30vw;
       margin-top: 1rem;
@@ -152,10 +166,12 @@ select {
   height: 3.125rem;
 
 }
+
 .checkboxBox {
   width: 40vw;
   display: flex;
   flex-wrap: wrap;
+
   .labelKomu {
     .checkbox {
       padding: 0.5rem;
@@ -164,10 +180,12 @@ select {
   }
 }
 
-.thanks{
+.thanks {
   width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto 0
 }
+
+//.formContent .formMain .forms form div

@@ -1,8 +1,6 @@
 import React, {useState} from "react";
-import {useHistory} from "react-router-dom";
 
 const Step2 = (props) => {
-    const history = useHistory();
     const [number, setNumber]=useState(props.value);
     const usenumber=(e)=>{
       setNumber(e.target.value)
@@ -10,12 +8,14 @@ const Step2 = (props) => {
     const dalej=(e)=>{
         if(number>0) {
             props.set(`number`, number);
-            history.push("/oddaj/krok3")
+
+            props.dalej();
         }
     };
     const wstecz=(e)=>{
         e.preventDefault();
-        history.push("/oddaj")
+        props.wstecz();
+
     };
     return (
         <>

@@ -1,42 +1,66 @@
-.giveHeader{
-  background-image: url("../../assets/Form-Hero-Image.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.mainGive{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-.title{
-  font-size: 2.5rem;
-  font-weight: 300;
-  padding-bottom: 1.5rem;
-}
-.karos{
+@mixin karos {
   display: flex;
   margin-top: 2.5rem;
   justify-content: center;
-}
-.karo{
-  width: 8.4rem;
-  height: 8.4rem;
-  transform: rotate(45deg);
-  border: 1px solid $dark;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  div{
-    transform: rotate(-45deg);
-    max-width: 5rem;
-    text-align: center;
-    &:after{
-      content: "1";
-      position: absolute;
-      top:-4.2rem;
-      left: 45%;
+  @for $i from 1 to 5 {
+    .karo:nth-child(#{$i}) {
+      width: 8.4rem;
+      height: 8.4rem;
+      transform: rotate(45deg);
+      border: 1px solid $dark;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        transform: rotate(-45deg);
+        max-width: 5rem;
+        text-align: center;
+
+        &:after {
+          content: '#{$i}';
+          position: absolute;
+          top: -4.2rem;
+          left: 45%;
+        }
+      }
     }
   }
 }
+
+  .giveHeader {
+    background-image: url("../../assets/Form-Hero-Image.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .mainGive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding-bottom: 1.5rem;
+  }
+
+  .karos {
+
+    @include karos
+  }
+
+//.karo{
+//  //width: 8.4rem;
+//  //height: 8.4rem;
+//  //transform: rotate(45deg);
+//  //border: 1px solid $dark;
+//  //display: flex;
+//  //flex-direction: column;
+//  //justify-content: center;
+//  //align-items: center;
+
+//}

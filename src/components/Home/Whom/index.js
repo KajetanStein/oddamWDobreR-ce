@@ -18,6 +18,7 @@ const Whom = () => {
             .then(response => response.json())
             .then(data => {
                     setFund(data);
+                    console.log(data);
                 }
             )
     }, [komu]);

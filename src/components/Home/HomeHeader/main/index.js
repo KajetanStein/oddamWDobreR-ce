@@ -16,7 +16,7 @@ const Main = (props) => {
                     <img src={Ornament} className={`ornament`}></img>
                 </div>
                 <div className={`mainButtons`}>
-                    <button onClick={navi(props.log ? '/' : '/zaloguj')} className={`buttonBig`}>Oddaj rzeczy</button>
+                    <button onClick={navi(props.log ? '/oddaj' : '/zaloguj')} className={`buttonBig`}>Oddaj rzeczy</button>
                     <button onClick={navi(props.log ? '/' : '/zaloguj')} className={`buttonBig`}>Zorganizuj zbiórkę</button>
                 </div>
             </container>

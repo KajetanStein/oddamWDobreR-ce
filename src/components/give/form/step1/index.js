@@ -1,9 +1,6 @@
 import React, {useState} from "react";
-import {useHistory} from "react-router-dom";
 const Step1 = (props) => {
-    const history = useHistory();
     const [what, setWhat]=useState(props.value);
-
     const submit=(e)=>{
         setWhat(e.target.value);
     };
@@ -11,7 +8,7 @@ const Step1 = (props) => {
         e.preventDefault();
         if(what.length>0) {
             props.set(`type`, what);
-            history.push("/oddaj/krok2")
+            props.dalej();
         }
     };
     return (
@@ -31,15 +28,15 @@ const Step1 = (props) => {
                     <h2>Zaznacz co chcesz oddać:</h2>
 
                         <div>
-                            <input checked={what === "Ubrania, które nadają się do ponownego użycia"} id={`clothesGood`} name={`what`} type={`radio`}
-                                   value={`Ubrania, które nadają się do ponownego użycia`}/>
+                            <input checked={what === "ubrania, które nadają się do ponownego użycia"} id={`clothesGood`} name={`what`} type={`radio`}
+                                   value={`ubrania, które nadają się do ponownego użycia`}/>
                             <label for={`clothesGood`}><span className={`checkbox`}></span>Ubrania, które nadają się do
                                 ponownego użycia</label>
 
                         </div>
                         <div>
 
-                            <input checked={what === "Ubrania do wyrzucenia"} id={`clothesBad`} name={`what`} type={`radio`} value={`Ubrania do wyrzucenia`}/>
+                            <input checked={what === "ubrania do wyrzucenia"} id={`clothesBad`} name={`what`} type={`radio`} value={`ubrania do wyrzucenia`}/>
                             <label
                                 for={`clothesBad`}> <span className={`checkbox`}></span>Ubrania do wyrzucenia</label>
                         </div>

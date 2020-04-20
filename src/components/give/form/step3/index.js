@@ -1,26 +1,11 @@
-import React, {useEffect, useState} from "react";
-import {useHistory} from "react-router-dom";
+import React, {useState} from "react";
+
 
 const Step3 = (props) => {
-    const history = useHistory();
     const [dane, setDane] = useState(props.value)
-    const [checked, setChecked] = useState({
-        dzieciom: false,
-        samotnym_matkom: false,
-        bezdomnym: false,
-        niepełnosprawnym: false,
-        osobom_starszym: false,
-    });
+    const [checked, setChecked] = useState(props.checked);
 
-    useEffect(() => {
-        const temp = checked;
-        Object.keys(checked).forEach((el) => {
-                if (props.value.whom.indexOf(el)>-1){
-                    temp[el] = true
-                }
-            });
-        setChecked(temp);
-    }, []);
+
 
 
     const uselokal = (e) => {
@@ -46,14 +31,16 @@ const Step3 = (props) => {
         e.preventDefault();
         if ((dane.spec.length + dane.local.length) > 0 && dane.whom.length > 0) {
             props.set('what', dane);
-            history.push("/oddaj/krok4")
-        } else {
-            console.log(dane.whom);
+            props.checking(checked);
+
+            props.dalej();
         }
+
     };
     const wstecz = (e) => {
         e.preventDefault();
-        history.push("/oddaj/krok2")
+
+        props.wstecz();
     };
 
     return (

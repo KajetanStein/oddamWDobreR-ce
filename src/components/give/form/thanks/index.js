@@ -1,15 +1,9 @@
-import React, {useEffect, useState} from "react";
-import {useHistory} from "react-router-dom";
-import Icon1 from "../../../../assets/Icon-1.svg";
-import Icon4 from "../../../../assets/Icon-4.svg";
-import TimePicker from 'react-time-picker';
+import React from "react";
 import Ornament from "../../../../assets/Decoration.svg";
-// import Moment as moment from 'moment';
-// import { extendMoment } from 'moment-range';
-// import Calendar from "react-input-calendar"
 
 
-const Thanks = (props) => {
+
+const Thanks = () => {
     return (
         <>
             <div className={`formContent`}>
